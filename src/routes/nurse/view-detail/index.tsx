@@ -29,7 +29,8 @@ const ViewDetail = ({ closeModel, id,secondBtnText,medicalInfo }: Iprops) => {
 			//let localtime = await parseTimeUTCtoLocal(resp.data.msg["date"],resp.data.msg["time"]);
 			//setMessage("Appointment timming set for " +"userName"+" at " +localtime);
 		} else notifError("Appointment not set");
-		closeModel(true);		
+		closeModel(true);	
+		console.log("Roshni Tiwari");	
 	};
 	const followUp=async()=>{
 		let payload: any = { patient_id: id };
