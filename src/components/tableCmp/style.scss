@@ -1,0 +1,101 @@
+#table {
+  .t-btn {
+    position: relative;
+    width: fit-content;
+    padding: 5px;
+    margin: 0px 2px;
+    height: auto;
+  }
+  .no-data {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    opacity: 0.5;
+    padding: 25px 0px;
+    border-bottom: 1px solid gray;
+  }
+  #search {
+    padding: 50px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    // input {
+    //   box-shadow: 0px 0px 1px -1px rgba(0, 0, 0, 0.2),
+    //     0px 0px 1px 0px rgba(0, 0, 0, 0.14), 1px 0px 3px 0px rgba(0, 0, 0, 0.12);
+    //   border: 1px solid #e0e0e0;
+    //   border-radius: 4px;
+    //   padding: 10px 20px;
+    // }
+    input::placeholder {
+      color: gray !important;
+    }
+  }
+}
+
+@import "../../theme/colors.scss";
+
+.table-container {
+  margin: 10px 0px;
+  width: 100%;
+  .MuiPaper-root {
+    color: $color-secondary;
+    background: $color-dark;
+    text-align: left;
+    // set value
+    .makeStyles-root-51 {
+      width: "100%"
+    }
+  }
+  .MuiPaper-elevation1 {
+    box-shadow: none;
+  }
+  .MuiTableCell-head {
+    color: $color-secondary;
+   
+    
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .MuiTableCell-body {
+    color: $color-secondary;
+  }
+  .MuiCheckbox-root {
+    color: $color-secondary;
+  }
+  .MuiTableCell-root {
+    border-bottom: 1px solid $color-table-border;
+  
+  }
+  .MuiTableSortLabel-root.MuiTableSortLabel-active {
+    color: $color-secondary;
+  }
+  .MuiTableSortLabel-root:hover {
+    color: $color-secondary;
+  }
+  .MuiTableSortLabel-root.MuiTableSortLabel-active.MuiTableSortLabel-root.MuiTableSortLabel-active
+    .MuiTableSortLabel-icon {
+    color: $color-secondary;
+  }
+  .MuiTablePagination-root {
+    color: $color-secondary;
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: $color-secondary;
+  }
+  .MuiSelect-icon {
+    color: $color-secondary;
+  }
+  .setBorder {
+    border-top: 1px solid rgba(227, 227, 227, 0.1);
+  }
+  .button-container {
+    padding-left: 35%;
+    margin-right: 250px;
+  }
+  .videoCallButton {
+    width: 100% !important;
+  }
+}

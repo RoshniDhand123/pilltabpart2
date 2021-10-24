@@ -1,0 +1,149 @@
+@import "../../theme/colors.scss";
+
+.home {
+	margin-top: 135px !important;
+	.MuiTypography-gutterBottom {
+		color: $color-secondary;
+	}
+	.MuiTypography-h5 {
+		font-size: 20px;
+		padding: 12px !important;
+		font-weight: 500;
+	}
+	.MuiTypography-h3 {
+		font-size: 32px;
+	}
+	.btn {
+		width: 115px !important;
+		float: right;
+	}
+	.form-container {
+		padding: 10px;
+		width: calc(100% - 20px);
+	}
+	#pill-input .MuiInputBase-root {
+		border: 1px solid $field-border !important;
+		color: #9a9a9a;
+	}
+	.upload .btn {
+		float: left !important;
+	}
+	.appointment .btn {
+		width: fit-content !important;
+		float: left;
+	}
+	.nurse .btn {
+		background: linear-gradient(
+			229.34deg,
+			rgb(0, 242, 195) 8.35%,
+			rgb(0, 152, 240) 89.61%
+		);
+		height: 40px;
+		padding: 0px;
+	}
+	.f-left {
+		float: left !important;
+	}
+	.nurse .style {
+		//width: 100px !important;
+		float: left !important;
+		margin-right: 10px !important;
+		margin-top: 7px !important;
+	}
+	// .PatientDetailContainer {
+	// 	align-items: center;
+	// 	width: fit-content;
+	// 	height: fit-content;
+	// 	// display: flex;
+	// 	// flex-direction: column;
+	// }
+	// .PatientDetailContainer .textArea {
+	// 	width: 80%;
+	// 	height: 150px;
+	// }
+	.form-card .btn{
+		width: 100%!important;
+	}
+}
+@media screen and (min-width:600px){
+	.upload #pill-input .MuiInputBase-root {
+		padding:0px;
+	}
+}
+@media screen and (min-width: 800px) {
+	.home {
+		.credit-card {
+			position: absolute;
+			bottom: 55%;
+			right: calc(12% - 7rem);
+		}
+		.billing .card-btn {
+			width: 270px !important;
+			position: absolute;
+			bottom: 25%;
+			right: calc(13% - 7rem) !important;
+		}
+		.save-btn {
+			margin-right: 20px;
+		}
+	}
+}
+
+@media (max-width: 700px) and (min-width: 600px) {
+	.home {
+		.card-btn {
+			margin-top: 190px;
+			width: 200px !important;
+			//margin-right: 18%;
+			position: absolute;
+			bottom: 19.5% !important;
+			right: 120px !important;
+		}
+		.save-btn {
+			margin-top: 200px;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	//for small screens
+	.home {
+		margin-top: 70px !important;
+		.billing .card-btn {
+			margin-top: 200px !important;
+		}
+		.btn {
+			width: 100% !important;
+		}
+		.appointment .btn {
+			width: 100% !important;
+		}
+	}
+}
+
+@media (max-width: 800px) and (min-width: 700px) {
+	.home {
+		.credit-card {
+			position: absolute;
+			bottom: 55%;
+			right: calc(0% - 4rem) !important;
+		}
+
+		.billing .card-btn {
+			width: 200px !important;
+			position: absolute;
+			right: calc(5% - 3rem) !important;
+			bottom: 25%;
+		}
+
+		.credit-card .rccs__card {
+			height: 142.873px;
+			margin: 0 auto;
+			position: relative;
+			-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+			transition: all 0.4s linear;
+			width: 250px;
+		}
+	}
+}

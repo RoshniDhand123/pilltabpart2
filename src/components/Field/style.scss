@@ -1,0 +1,51 @@
+@import "../../theme/colors.scss";
+
+#pill-input {
+  .error-text {
+    color: $color-error;
+    white-space: pre-line;
+    font-size: 0.8125rem;
+    text-align: end;
+  }
+  .visibility-icon {
+    svg {
+      color: #8a8787 !important;
+    }
+  }
+  .custom-placeholder {
+    position: absolute;
+    margin-top: 23px;
+    background: white;
+    color: rgba(0, 0, 0, 0.42);
+    font-size: 1rem;
+    padding: 0 20px 0 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.075px;
+    color: #9a9a9a;
+  }
+  .MuiInputBase-root {
+    border: 1px solid #eeeeee !important;
+    border-radius: 3px !important;
+    padding: 0px 2px 0px 30px;
+    margin: 10px 0px;
+    height: 35px;
+    mix-blend-mode: normal;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+}
+
+.sign-up #pill-input{
+  .MuiInputBase-root {
+    border:   1px solid $field-border !important;
+  }
+}
+
+.upload #pill-input .MuiInputBase-root {
+  border: 1px solid $field-border !important;
+  color: $color-secondary;
+}

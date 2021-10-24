@@ -1,0 +1,26 @@
+@import "../../theme/colors.scss";
+
+.linear-slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+    .MuiLinearProgress-root {
+        height: 10px;
+        border-radius: 7px;
+        width: 80%;
+    }
+    .MuiLinearProgress-barColorPrimary {
+        background: linear-gradient(360deg, $color-primary-dark 0%, $color-primary 100%);
+    }
+    .MuiLinearProgress-colorPrimary {
+        background-color: $progress-bg;
+    }
+    p {
+        color: $color-secondary;
+    }
+}

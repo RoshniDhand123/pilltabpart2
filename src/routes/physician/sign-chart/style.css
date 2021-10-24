@@ -1,0 +1,10 @@
+.parentContainer {
+	width: 80%;
+}
+.buttonContainer {
+	display: flex;
+	margin-left: 30%;
+}
+.buttonStyle {
+	margin-right: 5px;
+}

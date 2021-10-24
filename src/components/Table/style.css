@@ -1,0 +1,9 @@
+#elloTable input:focus {
+  outline: none;
+}
+#elloTable input {
+  padding: 10px 12px;
+  background: #c5c3c3;
+  border: none;
+  width: 100;
+}

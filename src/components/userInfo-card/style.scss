@@ -1,0 +1,22 @@
+@import "../../theme/colors.scss";
+
+.userInfo-card {
+	background: linear-gradient(
+		229.34deg,
+		rgb(0, 242, 195) 8.35%,
+		rgb(0, 152, 240) 89.61%
+	);
+	width: 500px;
+	color: $color-secondary;
+	border-radius: 6px;
+	padding: 10px 40px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+.flex-width {
+	display: flex;
+	justify-content: flex-start;
+	width: 250px;
+	height: 45px;
+}

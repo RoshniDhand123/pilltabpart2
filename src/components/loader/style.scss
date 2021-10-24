@@ -1,0 +1,13 @@
+.loading{
+    .MuiPaper-root {
+        background-color: transparent;
+    }
+    .MuiDialog-paper {
+        margin: 32px;
+        position: relative;
+        overflow-y: unset;
+    }
+    .MuiPaper-elevation24 {
+        box-shadow: none;
+    }
+}

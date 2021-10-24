@@ -1,0 +1,283 @@
+.video-call-component {
+	height: 100%;
+    width: 70%;
+    min-height: 70vh;
+	.chatComponent {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.msgBox {
+		height: 32px;
+		margin-right: 10px;
+	}
+	.buttonStyle {
+		background: linear-gradient(
+			229.34deg,
+			rgb(0, 242, 195) 8.35%,
+			rgb(0, 152, 240) 89.61%
+		);
+		height: 40px;
+		padding: 0px;
+	}
+	.room {
+		display: flex;
+		align-items: end;
+		justify-content: space-between;
+		.right-section {
+			width: 470px;
+			margin-left: 5px;
+		}
+		.participant-column {
+			height: calc(100vh - 200px);
+			overflow-y: auto;
+		}
+	}
+	.participant {
+		position: relative;
+		color:black;
+		.identity {
+			position: absolute;
+			background: #ffffff;
+			padding: 10px;
+			border: 0.5px solid;
+			right: 0px;
+		}
+		.icon-component {
+			display: flex;
+			position: absolute;
+			bottom: 0px;
+			left: 40%;
+			transform: translate(-40%, 0px);
+		}
+		.icon {
+			height: 40px;
+			width: 40px;
+			cursor: pointer;
+			border-radius: 20px;
+			background-color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 10px;
+			//set
+			.MuiSvgIcon-root {
+				width: 30px !important;
+				fill: red;
+			}
+		}
+		.icon-disconnect {
+			color: red;
+		}
+
+		.icon-disabled-video {
+			color: white;
+			background-color: red;
+			//set
+			.MuiSvgIcon-root {
+				fill: white;
+			}
+		}
+	}
+
+	.track {
+		.video-remote {
+			width: 100% !important;
+			height: auto !important;
+		}
+		.video-local {
+			width: 100% !important;
+			height: auto !important;
+		}
+	}
+	.btnStyle {
+		width: 150px !important;
+	}
+	// .room {
+	// 	.msgContainer {
+	// 		.MuiTypography-root {
+	// 			height: 400px !important;
+	// 		}
+	// 	}
+	// }
+	.room {
+		.msgContainer {
+			.ChatFormContainer {
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				width: 94%;
+			}
+		}
+	}
+}
+#simplePopOver {
+	* {
+		-ms-overflow-style: none;
+	}
+	::-webkit-scrollbar {
+		display: none;
+	}
+}
+.closeButtonContainer {
+	height: 8%;
+	border-bottom: 1px solid lightgrey;
+}
+.chatContainer {
+	height: 80%;
+	overflow: auto;
+	font-family: serif;
+	.chatList {
+		margin-bottom: 5px;
+	}
+}
+.ChatFormContainer {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 94%;
+	height: 10%;
+	.chatForm {
+		display: flex;
+		margin-right: 10px;
+	}
+	.chatInputField {
+		width: 70%;
+		margin-right: 3px;
+	}
+	.msgSendButton {
+		width: 30%;
+		background: linear-gradient(
+			229.34deg,
+			rgb(0, 242, 195) 8.35%,
+			rgb(0, 152, 240) 89.61%
+		);
+	}
+}
+.chatIcon {
+	.MuiSvgIcon-root {
+		fill: white !important;
+	}
+}
+@media (min-width: 400px) and(max-width:600px) {
+	.closeButtonContainer {
+		.MuiSvgIcon-root {
+			width: 1.7em !important;
+			height: 1.7em !important;
+		}
+	}
+	.chatInputField {
+		height: 50px;
+		font-size: 25px;
+	}
+	.msgSendButton {
+		height: 55px;
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.closeButtonContainer {
+		.MuiSvgIcon-root {
+			width: 2em !important;
+			height: 2em !important;
+		}
+	}
+	.chatInputField {
+		height: 70px;
+		font-size: 25px;
+	}
+	.msgSendButton {
+		height: 76px;
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.room {
+		display: flex;
+		flex-direction: column;
+		margin-top: -200px;
+		.right-section {
+			width: 90% !important;
+		}
+		.participant-column {
+			height: calc(100vh - 300px) !important;
+		}
+	}
+	.video-call-component {
+		.participant {
+			//width: 100%;
+			.icon {
+				height: 80px !important;
+				width: 80px !important;
+				border-radius: 60px !important;
+				.MuiSvgIcon-root {
+					width: 50px !important;
+				}
+			}
+		}
+	}
+	.msgBox {
+		width: 60%;
+		height: 45px !important;
+	}
+	.buttonStyle {
+		width: 30% !important;
+		height: 49px !important;
+		font-size: 20px !important;
+	}
+	#simplePopOver {
+		.MuiPopover-paper {
+			width: 860px;
+			top: 85px !important;
+			left: 10px !important;
+			height: 90%;
+		}
+	}
+	.msgContainer {
+		position: relative;
+		.chatIcon {
+			.MuiSvgIcon-root {
+				position: absolute;
+				top: -77px;
+				left: 20px;
+				height: 78px !important;
+				width: 78px !important;
+			}
+		}
+	}
+}
+@media screen and (min-width: 600px) {
+	#simplePopOver {
+		.MuiPopover-paper {
+			left: 2px !important;
+			top: 85px !important;
+			width: 600px;
+			height: 80%;
+		}
+	}
+	.msgContainer {
+		position: relative;
+		.chatIcon {
+			.MuiSvgIcon-root {
+				position: absolute;
+				top: -49px;
+				left: 10px;
+				height: 45px !important;
+				width: 45px !important;
+			}
+		}
+	}
+}
+@media (min-width: 600px) and(max-width:700px) {
+	.participant-column {
+		height: 95% !important;
+	}
+	.room {
+		height: 100%;
+		.right-section {
+			height: 90%;
+		}
+	}
+}

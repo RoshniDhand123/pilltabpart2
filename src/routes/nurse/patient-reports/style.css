@@ -1,0 +1,32 @@
+.PatientDetailContainer {
+	min-width: 80%;
+	background: #1e2024;
+	padding: 40px;
+	border-radius: 5px;
+}
+.previous-record {
+	color: white;
+	height: 250px;
+	padding: 15px;
+	overflow: auto;
+}
+.heading {
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.textArea {
+	width: 100% !important;
+	height: 350px !important;
+	border: 1px solid lightgray;
+	background: transparent;
+	color: white;
+}
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+.buttonStyle {
+	margin-right: 5px;
+	min-width: fit-content;
+}

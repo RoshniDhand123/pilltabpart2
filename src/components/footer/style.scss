@@ -1,0 +1,45 @@
+@import "../../theme/colors.scss";
+
+.footer {
+	a {
+		color: $color-secondary;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 18px;
+		letter-spacing: 0.08px;
+		padding: 10px;
+		white-space: nowrap;
+	}
+	.footer-links {
+		display: flex;
+	}
+	.footer-right {
+		justify-content: flex-end;
+	}
+}
+@media screen and (max-width: 600px) {
+	.footer {
+		a {
+			text-align: center;
+		}
+	}
+	.footer-links {
+		display: flex;
+		flex-direction: column;
+	}
+	.border {
+		border: 0.5px solid $field-border;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.footer {
+		border-top: 0.5px solid $field-border;
+		width: 100%;
+		position: fixed;
+		z-index: 9999;
+		background: $color-dark;
+		bottom: 0px;
+	}
+}

@@ -1,0 +1,10 @@
+@import "../../theme/colors.scss";
+
+.order-card {
+	background: $color-order-card !important;
+	min-width: 50%;
+	color: #ffffff;
+	border-radius: 6px;
+	padding: 10px 40px;
+	overflow: auto;
+}

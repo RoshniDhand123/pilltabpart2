@@ -1,0 +1,138 @@
+@import "../../theme/colors.scss";
+
+#subscriber {
+  // .headerSize{font-size: 45px!important;}
+  .form-card{
+    height: 494px !important;
+    width: 278px !important;
+  }
+  .container {
+    padding: 0px 25px;
+    margin: 15px 0px;
+  }
+  .sub-btn {
+    display: block;
+    width: 70% !important;
+    margin: auto !important;
+    padding: 10px;
+    border: 0px solid #0ca285;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(
+      200deg,
+      #8a8787 0%,
+      $color-primary 100%
+    ) ;
+    border-radius: 35px !important;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.75rem !important;
+    font-family: "Poppins" !important;
+  }
+
+  .para-container {
+    margin: 25px 0px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0.075px;
+  }
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    position: relative;
+    left: -20px;
+  }
+  .under-line {
+    text-decoration: none;
+  }
+  .center {
+    text-align: center;
+    margin: 10px 0px;
+  }
+  .txt {
+    font-weight: bold;
+    margin: 5px 0px;
+    font-size:17px;
+  }
+  .amount {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .back-amount {
+    font-size: 105px;//130px;
+    position: absolute;
+    top: -45px;//-50px;
+    color: #18c09f2b;
+    font-weight: bold;
+  }
+  .btn-primary{
+    background: linear-gradient(360deg, $color-primary-dark 0%, $color-primary 100%);
+  }
+  .btn-success{
+    background: linear-gradient(229.34deg, $color-success 8.35%, $color-success-dark 89.61%)
+  }
+  .btn-warning{
+    background: linear-gradient(229.34deg, $color-warning 8.35%, $color-warning-dark 89.61%)
+  }
+  .btn-danger{
+    background: linear-gradient(229.34deg, $color-danger 8.35%, $color-danger-dark 87.43%);
+  }
+  .amount-primary{
+    color: $color-primary-light
+  }
+  .amount-success{
+    color: $color-success-light
+  }
+  .amount-warning{
+    color: $color-warning-light
+  }
+  .amount-danger{
+    color: $color-danger-light
+  }
+  .background-dark{
+    background: $color-dark !important;
+  }
+  .background-light{
+    background: $color-secondary !important;
+  }
+  .text-dark{
+    color: $color-dark !important;
+  }
+  .text-light{
+    color: $color-secondary !important;
+  }
+  
+}
+
+.flex-end {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+}
+.cancel-btn {
+  padding-right: 25px;
+  color: $color-primary-dark;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.m-r-25 {
+  margin-right: 25px;
+}
+
+.center-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 5px;
+}

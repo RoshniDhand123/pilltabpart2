@@ -1,0 +1,85 @@
+#set-Vacation {
+	background: #1e2024;
+	color: white;
+	padding: 30px;
+	position: relative;
+	width: 400px;
+	height: 210px;
+	margin: 10px;
+	.vacation-heading {
+		font-size: 20px;
+		text-align: center;
+		font-weight: bold;
+	}
+	.buttonContainer {
+		display: flex;
+		// float: right;
+		position: absolute;
+		bottom: 15px;
+		right: 15px;
+	}
+	.set-width {
+		width: fit-content;
+	}
+	.dropDownStyle {
+		margin: 25px 0px;
+		display: flex;
+		align-items: center;
+	}
+	.m-topBottom {
+		margin: 14px 0px;
+	}
+	.subheading {
+		margin-right: 10px;
+	}
+}
+#updgradePlan-payment {
+	padding: 20px;
+	background-color: #1e2024;
+	margin: 10px;
+	.payment-heading {
+		text-align: center;
+		color: white;
+		font-size: 22px;
+		font-weight: bold;
+		padding: 15px 0px;
+	}
+	.payment-buttonContainer {
+		padding: 15px 0px;
+		display: flex;
+		justify-content: center;
+	}
+	.payment-subheading {
+		color: white;
+		padding: 25px 0px;
+	}
+	.m-bothSide {
+		margin: 0px 10px;
+	}
+}
+#forgot-password-setting {
+	display: flex;
+	//justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	.button {
+		width: fit-content!important;
+	}
+	.table-container {
+		padding: 10px;
+		//width: calc(100% - 250px);
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 80px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.patient-plan-container {
+		.btn {
+			width: 50% !important;
+			margin: 10px;
+		}
+	}
+}

@@ -1,0 +1,119 @@
+@import "../../theme/colors.scss";
+
+.sign-up {
+	margin-top: 135px !important;
+	.MuiTypography-gutterBottom {
+		margin-bottom: 0.35em;
+		color: $color-secondary;
+		.MuiTypography-h4 {
+			font-size: 32px;
+		}
+		.MuiTypography-h5 {
+			font-size: 22px;
+		}
+		.MuiTypography-h6 {
+			font-size: 17px;
+		}
+	}
+	.MuiInputBase-input {
+		color: $color-secondary;
+	}
+	.form-container {
+		width: 90%;
+		margin: auto;
+		position: relative;
+	}
+}
+.treatment-card {
+	border-radius: 6px;
+	color: $color-secondary;
+	cursor: pointer;
+	margin: 20px 60px !important;
+}
+.treatment-card1 {
+	background: linear-gradient(
+		229.34deg,
+		$card-gradient1 8.35%,
+		$card-gradient2 92.02%
+	);
+}
+.treatment-card2 {
+	background: linear-gradient(
+		360deg,
+		$card-gradient2 0%,
+		$card-gradient4 100%
+	);
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+.billing {
+	.MuiGrid-grid-sm-4 {
+		.MuiFormControl-fullWidth {
+			width: 90%;
+		}
+	}
+	.MuiGrid-grid-sm-12 {
+		max-width: 95%;
+	}
+}
+.billing .form-button {
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 480px) {
+	.billing {
+		.MuiGrid-grid-sm-4 {
+			.MuiFormControl-fullWidth {
+				width: 100%;
+			}
+		}
+		.MuiGrid-grid-sm-12 {
+			max-width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.billing .btn {
+		margin-top: 200px !important;
+	}
+	.billing .save-btn {
+		margin-top: 50px !important;
+	}
+}
+@media screen and (min-width: 600px) {
+	.profile .form-container {
+		width: 40%;
+	}
+	.charts .form-container {
+		width: 100%;
+		padding: 12px;
+	}
+	.charts .field-container {
+		align-items: flex-start;
+	}
+	.demographics .form-container {
+		width: 80%;
+	}
+	.sign-up .billing .card-btn {
+		position: absolute;
+		right: calc(13% - 4rem) !important;
+		bottom: 4%;
+		width: 270px !important;
+		background: linear-gradient(
+			229.34deg,
+			$modal-btn-gradient1 8.35%,
+			$modal-btn-gradient2 89.61%
+		);
+		border-radius: 6px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.sign-up {
+		margin-top: 70px !important;
+	}
+}
+@media screen and (max-width: 400px) {
+	.demographics .form-container {
+		margin-left: 60px;
+	}
+}

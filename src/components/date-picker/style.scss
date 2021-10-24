@@ -1,0 +1,30 @@
+@import "../../theme/colors.scss";
+
+.datePicker {
+    .react-datepicker-popper {
+        z-index: 9;
+    }
+    .react-datepicker-wrapper {
+        width: 100%;
+        border: 1px solid $field-border;
+        height: 34px;
+        border-radius: 3px;
+    }
+    input {
+        background: none;
+        border: none;
+        width: 100%;
+        height: 35px;
+        padding-left: 15px;
+        &:focus {
+            outline: none;
+          }
+    }
+}
+.column{
+    .datePicker{
+        .react-datepicker-wrapper {
+            margin-top: 17px;
+        }
+    }
+}

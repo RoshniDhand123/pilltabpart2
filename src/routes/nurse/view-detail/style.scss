@@ -1,0 +1,43 @@
+#view-detail {
+	color: white;
+	min-width: 700px;
+	//min-height: 400px;
+	// display: flex;
+	// justify-content: center;
+	background: #0f1012;
+	padding: 15px 40px;
+	.b-width {
+		min-width: fit-content !important;
+		margin-right: 25px;
+	}
+	.set-alignment {
+		display: flex;
+		//align-items: center;
+		float: right;
+	}
+	.set-space {
+		margin-right: 10px;
+	}
+	.row {
+		display: flex;
+	}
+	.fieldName {
+		width: 90px;
+		text-transform: capitalize;
+		font-weight: bold;
+	}
+	.fieldValue{
+		text-transform: capitalize;
+	}
+	
+	.detailInfo {
+		margin: 20px 0px;
+		min-height: 350px;
+	}
+	.d-flex{
+		display: flex;
+	}
+	.container-box{
+		margin-bottom: 10px;
+	}
+}

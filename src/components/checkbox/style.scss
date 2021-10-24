@@ -1,0 +1,14 @@
+@import "../../theme/colors.scss";
+
+.checkbox-container {
+	display: flex;
+	flex-wrap: wrap;
+	.option {
+		padding: 10px 10px 10px 0px;
+		color: white;
+		text-align: left;
+	}
+	.MuiIconButton-root {
+		color: $color-secondary;
+	}
+}

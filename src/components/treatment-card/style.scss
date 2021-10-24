@@ -1,0 +1,26 @@
+@import "../../theme/colors.scss";
+
+.treat-card {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+  border-radius: 4px;
+  padding: 1.25rem;
+  margin: 25px 2px;
+  width: 150px;
+  height: 150px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.charts{
+  .treat-card{
+    background: $color-grey1;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    height: 120px;
+    width: 120px;
+    margin: 10px 15px;
+    color: $color-secondary;
+  }
+}
+

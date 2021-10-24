@@ -1,0 +1,233 @@
+@import "../../theme/colors.scss";
+
+.forgot-password-text {
+	color: $color-dark;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 15px;
+	margin-top: 0.5rem;
+	text-align: center;
+}
+.forgot-password-link {
+	text-decoration: none;
+}
+.form-component-btn {
+	background: $color-secondary;
+	border-radius: 35px;
+	height: 55px;
+	width: 100%;
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-top: 1.25rem;
+	border: none;
+	color: $color-grey;
+	line-height: 37px;
+}
+.form-component-btn:focus {
+	outline: none;
+}
+.remember-txt {
+	color: rgba(0, 0, 0, 0.65);
+	font-size: 0.8rem;
+	padding-left: 4px;
+}
+
+.MuiCheckbox-colorSecondary.Mui-checked {
+	color: $color-primary-dark !important;
+}
+
+.MuiInput-underline:after {
+	border-bottom: none !important;
+}
+
+.MuiSvgIcon-root {
+	width: 1.2rem !important;
+	height: 1.2rem !important;
+}
+
+.form-root {
+	display: flex;
+	flex-direction: row;
+}
+.center-set {
+	margin: auto;
+}
+.input-label {
+	padding-right: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 15px;
+	text-align: end;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 18px;
+	letter-spacing: 0.075px;
+	color: white;
+}
+.questionnaire .input-label {
+	text-align: start;
+}
+.column .input-label {
+	justify-content: flex-start;
+	margin-top: 12px;
+}
+.input-field {
+	flex: 2;
+}
+
+#pill-input .custom-placeholder {
+	margin-top: 18px !important;
+	left: 30px !important;
+}
+
+select {
+	border: 0.5px solid rgba(0, 0, 0, 0.2) !important;
+	border-radius: 3px !important;
+	margin: 10px 0px;
+	height: 30px;
+	width: 100%;
+	background: transparent;
+	padding: 0px 2px 0px 5px !important;
+}
+.xs-50 {
+	flex-basis: 50% !important;
+}
+.xs-25 {
+	flex-basis: 20% !important;
+}
+
+.xs-75 {
+	flex-basis: 65% !important;
+}
+
+.flex-auto {
+	flex: auto !important;
+}
+
+.MuiGrid-grid-xs-4 {
+	display: flex;
+}
+
+.input-padding > div {
+	padding: 0px 2px 0px 10px !important;
+}
+
+.form-card .MuiInputBase-input {
+	color: #9a9a9a !important;
+}
+.MuiInputBase-input {
+	color: white;
+}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"],
+select,
+textarea {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0.075px;
+	color: white;
+	//font-size: 0.8rem;
+	font-family: "Poppins";
+}
+input::-webkit-input-placeholder {
+	text-transform: capitalize;
+}
+.StripeElement {
+	border: 0.5px solid $field-border !important;
+	border-radius: 3px !important;
+	padding: 8px 2px 8px 30px;
+	margin: 10px 0px;
+	height: 35px;
+	mix-blend-mode: normal;
+	border: 1px solid #1d253b;
+	box-sizing: border-box;
+	border-radius: 6px;
+}
+.InputElement {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.075px;
+	color: $color-secondary !important;
+	font-size: 0.8rem;
+	font-family: "Poppins";
+	padding: 8px 0px !important;
+}
+
+.input-padding {
+	padding: 8px 2px 8px 5px;
+}
+.questionnaire .field-container {
+	margin: 10px 0px;
+}
+// .demographics .field-container {
+// 	align-items: baseline;
+// }
+.field-container {
+	display: flex;
+	align-items: center;
+	.MuiGrid-grid-xs-3 {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.MuiGrid-grid-xs-2 {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+.custom-file-input input::-webkit-file-upload-button {
+	visibility: hidden;
+	float: right;
+}
+.custom-file-input input::before {
+	content: "Browse files";
+	background: linear-gradient(
+		360deg,
+		$color-primary-dark 0%,
+		$color-primary 100%
+	);
+	border: 1px solid #999;
+	border-radius: 6px;
+	padding: 0px 10px;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 10px;
+	color: $color-secondary;
+	position: absolute;
+	right: 0;
+	width: 100px;
+	text-align: center;
+	margin-right: 10px;
+}
+.custom-file-input input:hover::before {
+	border-color: black;
+}
+.custom-file-input input:active::before {
+	background: linear-gradient(
+		360deg,
+		$color-primary-dark 0%,
+		$color-primary 100%
+	);
+}
+.selectedFile input[type="file"] {
+	color: $color-secondary;
+	direction: rtl !important;
+	width: fit-content;
+	margin-right: 30%;
+}
+.notSelected input[type="file"] {
+	color: transparent;
+}
+@media screen and (max-width: 600px) {
+	.custom-file-input input::before {
+		width: 50px;
+	}
+}

@@ -1,0 +1,57 @@
+@import "../../theme/colors.scss";
+
+// get started page css starts
+.gradientBtn {
+  display: block;
+  width: 50% !important;
+  margin: auto !important;
+  padding: 10px;
+  border: 0px solid #0ca285;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(200deg,
+      $gradient1 0%,
+      $gradient2 100%) !important;
+  border-radius: 35px !important;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.75rem !important;
+  font-family: 'Poppins' !important;
+}
+
+input {
+  font-family: 'Poppins';
+  font-size: 0.8rem;
+}
+
+// get started page css ends
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 0px solid #0ca285;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(360deg,
+      $color-primary-dark 0%,
+      $color-primary 100%);
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: 'Poppins';
+}
+.sign-up .btn{
+  width: 150px !important;
+  float: left;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .sign-up .btn{
+    width: 100% !important
+  }
+}

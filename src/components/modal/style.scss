@@ -1,0 +1,91 @@
+@import "../../theme/colors.scss";
+
+.modal {
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	-ms-overflow-style: none; /*Hide scrollbar for IE and Edge */
+	scrollbar-width: none; /*Hide scrollbar for Firefox */
+}
+.modal::-webkit-scrollbar {
+	width: 0px;
+	background: transparent; /* make scrollbar transparent */
+}
+
+.modal .MuiSvgIcon-root {
+  width: 84px !important;
+  height: 84px !important;
+}
+
+.modal .MuiSvgIcon-root {
+  fill: $tick-success;
+}
+.modal #set-Vacation .MuiSvgIcon-root {
+	fill: lightgrey;
+	width: 30px !important;
+	height: 30px !important;
+}
+.modal #set-Vacation .MuiInputBase-root{
+	color:white;
+}
+.modal-text {
+  color: $color-secondary;
+  text-align: center;
+}
+
+.btn-link-txt {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	.btn {
+		height: 25px !important;
+		margin: 5px;
+  }
+  .m-right{
+    margin-right: 15px;
+  }
+}
+.card-form {
+  background: #1e2024;
+}
+.modal .btn {
+  width: 101px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    229.34deg,
+    $modal-btn-gradient1 8.35%,
+    $modal-btn-gradient2 89.61%
+  );
+  border-radius: 6px;
+  font-size: 14px;
+}
+//set....
+.MuiTypography-gutterBottom {
+  color: white;
+}
+.modal-text-beside-sidebar {
+  color: #ffffff;
+  text-align: center;
+  background: #1e2024;
+  padding: 30px;
+  margin: auto 20%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .modal-text-beside-sidebar {
+    margin: auto 12%;
+    .font-30 {
+      font-size: 18px !important;
+    }
+  }
+  .flex-center {
+    min-width: 100px;
+  }
+}
