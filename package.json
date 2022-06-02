@@ -22,7 +22,7 @@
     "formik-material-ui": "^3.0.1",
     "node-sass": "^5.0.0",
     "notistack": "^1.0.6",
-    "npm": "^7.16.0",
+    "npm": "^8.11.0",
     "react": "^17.0.2",
     "react-credit-cards": "^0.8.3",
     "react-datepicker": "^3.7.0",
